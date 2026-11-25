@@ -9,6 +9,7 @@
 | --- | --- |
 | [N1 - Project Setup and Package Management](set1/n1-setup/) | Sets up an npm project with a start script, a runtime dependency, and a development dependency. |
 | [N2 - Modular Calculator](set1/n2-calculator/) | Runs five operations from the command line using CommonJS modules. |
+| [N3 - File Manager](set1/n3-file-manager/) | Creates, reads, appends to, deletes, and lists text files using fs and path. |
 
 ### N1 - Project Setup and Package Management
 
@@ -44,3 +45,22 @@ node index.js average 80 90 100
 Try division by zero with `node index.js divide 10 0` and an unknown operation with `node index.js power 2 3`.
 
 ![N2 terminal run showing all five calculator operations and both error messages](set1/n2-calculator/screenshots/n2-operations-errors.png)
+
+### N3 - File Manager
+
+From the repository root, run:
+
+```powershell
+cd set1/n3-file-manager
+node index.js list
+node index.js create example.txt "Example text"
+node index.js read example.txt
+node index.js update example.txt "More text"
+node index.js delete example.txt
+```
+
+The files folder contains the three text files produced in the sample run. The list command shows each full path, file name, extension, and contents.
+
+![N3 creating, reading, and updating text files](set1/n3-file-manager/screenshots/n3-create-read-update.png)
+
+![N3 deleting a temporary file and listing the three sample files](set1/n3-file-manager/screenshots/n3-delete-list.png)
