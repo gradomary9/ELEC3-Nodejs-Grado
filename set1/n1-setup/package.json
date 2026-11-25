@@ -1,0 +1,17 @@
+{
+  "name": "n1-setup",
+  "version": "1.0.0",
+  "description": "N1 exercise on npm project setup and dependencies",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Mary Grado",
+  "type": "commonjs",
+  "dependencies": {
+    "dayjs": "1.11.23"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.14"
+  }
+}
